@@ -16,7 +16,7 @@ const layoutStyle = {
 const Layout: FunctionComponent<LayoutProps> = ({ children, title }) => (
   <div style={layoutStyle}>
       <Head>
-          <title>{title}</title>
+          <title>{title || ""}</title>
       </Head>
     <Header />
     <div className="container">
