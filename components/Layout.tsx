@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "./Header";
+import Header from "./header";
 import { FunctionComponent } from "react";
-import Footer from "./Footer";
+import Footer from "./footer";
 import "../styles/styles.scss";
 
 type LayoutProps = {

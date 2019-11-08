@@ -14,13 +14,13 @@ const JobListings: FunctionComponent<JobListingsProps> = (
     <ul>
       {props.jobs.slice(0, 5).map(job => (
         <li key={job.id}>
-          <Link href="/JobDetails/[id]" as={`/JobDetails/${job.id}`}>
+          <Link href="/job-details/[id]" as={`/job-details/${job.id}`}>
             <a>{job.title}</a>
           </Link>
         </li>
       ))}
     </ul>
-    <Link href="/AllJobs"><a>Show all</a></Link>
+    <Link href="/all-jobs"><a>Show all</a></Link>
   </div>
 );
 

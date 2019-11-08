@@ -1,6 +1,7 @@
 import { JobListing } from "../models/job-listing";
 import { NextPage, NextPageContext } from "next";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
+import fetch from 'isomorphic-unfetch';
 
 interface Props {
   jobs: JobListing[];
@@ -25,6 +26,7 @@ const AllJobs: NextPage<Props> = (props: Props) => (
 );
 
 AllJobs.getInitialProps = async (ctx: NextPageContext) => {
+  console.log(JSON.stringify(ctx));
   const res = await fetch(
     "https://us-central1-hca-web-static.cloudfunctions.net/fn-jrn-latest-jobs"
   );

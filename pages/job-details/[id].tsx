@@ -1,7 +1,8 @@
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout";
 import { JobListing } from '../../models/job-listing';
 import { NextPage, NextPageContext } from 'next';
 import { isArray } from 'util';
+import fetch from 'isomorphic-unfetch';
 
 type Props = {
     job?: JobListing;

@@ -1,7 +1,7 @@
-import Layout from "../components/Layout";
-import SearchForm from "../components/SearchForm";
-import JobListings from "../components/JobListings";
-import NewsListings from "../components/NewsListings";
+import Layout from "../components/layout";
+import SearchForm from "../components/search-form";
+import JobListings from "../components/job-listings";
+import NewsListings from "../components/news-listings";
 import { NextPage, NextPageContext } from "next";
 import { JobListing } from "../models/job-listing";
 import fetch from "isomorphic-unfetch";
