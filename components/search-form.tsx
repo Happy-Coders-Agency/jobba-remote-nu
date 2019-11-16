@@ -1,10 +1,12 @@
+import './search-form.scss';
+
 const SearchForm = () => (
   <div className="columns">
     <div className="column is-10 is-offset-1">
       <div className="field has-addons">
         <div className="control is-expanded">
           <input
-            className="input is-large"
+            className="input is-large search-text"
             type="text"
             placeholder="Enter keywords to find your next job"
           />

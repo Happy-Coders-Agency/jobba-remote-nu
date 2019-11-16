@@ -6,10 +6,16 @@ type JobListingsProps = {
   jobs: JobListing[];
 };
 
+const layoutStyle = {
+  backgroundColor: "#E0E0E0",
+  padding: "10px",
+  borderRadius: "3px"
+};
+
 const JobListings: FunctionComponent<JobListingsProps> = (
   props: JobListingsProps
 ) => (
-  <div>
+  <div style={layoutStyle}>
     <div className="title has-text-centered">Latest jobs</div>
     <ul>
       {props.jobs.slice(0, 5).map(job => (
@@ -20,7 +26,9 @@ const JobListings: FunctionComponent<JobListingsProps> = (
         </li>
       ))}
     </ul>
-    <Link href="/all-jobs"><a>Show all</a></Link>
+    <div className="has-text-right">
+      <Link href="/all-jobs"><a>Show all</a></Link>
+    </div>
   </div>
 );
 

@@ -1,5 +1,5 @@
 const Header = () => (
-  <nav className="navbar" role="navigation" aria-label="main navigation">
+  <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
         <a className="navbar-item title" href="https://www.jobbaremote.nu">
             JobbaRemote.Nu

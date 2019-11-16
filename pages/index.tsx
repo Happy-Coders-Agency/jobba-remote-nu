@@ -12,14 +12,18 @@ interface Props {
 
 const Home: NextPage<Props> = (props: Props) => (
   <Layout title="jobbaremote.nu">
-    <SearchForm />
+    <section className="section">
+      <div className="container">
+        <SearchForm />
+      </div>
+    </section>
     <section className="section">
       <div className="container">
         <div className="columns">
-          <div className="column is-4 is-offset-2">
+          <div className="column is-4 is-offset-1">
             <JobListings jobs={props.jobs}/>
           </div>
-          <div className="column is-4">
+          <div className="column is-4 is-offset-1">
               <NewsListings/>
           </div>
         </div>

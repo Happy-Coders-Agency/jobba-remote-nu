@@ -2,7 +2,6 @@ import Head from "next/head";
 import Header from "./header";
 import { FunctionComponent } from "react";
 import Footer from "./footer";
-import "../styles/styles.scss";
 
 type LayoutProps = {
   title?: string;
